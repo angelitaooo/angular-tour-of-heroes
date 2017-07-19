@@ -6,9 +6,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:ghpages": "ng build --prod --base-href https://angelitaooo.github.io/angular-tour-of-heroes/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "npm run build:ghpages && gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
